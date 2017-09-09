@@ -1,11 +1,62 @@
-<div class="ui container">
-  <h4 class="ui horizontal divider header">
-    <i class="book icon"></i>
-    Bridesmaids
-  </h4>
-
-  <h4 class="ui horizontal divider header">
-    <i class="book icon"></i>
-    Groomsmen
-  </h4>
+<div class="ui center aligned raised content">
+  <div class="ui center aligned vertically divided stackable grid">
+    <div class="two column row">
+      <div class="column">
+        <h4 class="ui horizontal divider header">
+          <i class="female icon"></i>
+          Bridesmaids
+        </h4>
+        <div *ngFor="let crew of bridesmaids; let i = index;" class="ui centered cards">
+          <div class="ui card">
+            <div class="image">
+              <img src={{crew.image}}>
+            </div>
+            <div class="content">
+              <a class="header">{{crew.name}}</a>
+              <div class="meta">
+                <span class="date">{{crew.meta}}</span>
+              </div>
+              <div *ngFor="let fact of crew.facts;" class="description">
+                <p>{{fact}}</p>
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="user icon"></i>
+                {{crew.role}}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="ui horizontal divider header">
+          <i class="male icon"></i>
+          Groomsmen
+        </h4>
+        <div *ngFor="let crew of groomsmen; let i = index;" class="ui centered cards">
+          <div class="ui card">
+            <div class="image">
+              <img src={{crew.image}}>
+            </div>
+            <div class="content">
+              <a class="header">{{crew.name}}</a>
+              <div class="meta">
+                <span class="date">{{crew.meta}}</span>
+              </div>
+              <div *ngFor="let fact of crew.facts;" class="description">
+                <p>{{fact}}</p>
+              </div>
+            </div>
+            <div class="extra content">
+              <a>
+                <i class="user icon"></i>
+                {{crew.role}}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
