@@ -58,35 +58,62 @@
         </div>
       </div>
     </div>
-    <div class="one column row">
-        <div class="column">
-          <h2 class="ui horizontal divider header">
-            <i class="child icon"></i>
-            Ushers
-          </h2>
-          <div *ngFor="let crew of ushers; let i = index;" class="ui centered cards">
-            <div class="ui card">
-              <div class="image">
-                <img src={{crew.image}}>
-              </div>
-              <div class="content">
-                <a class="header">{{crew.name}}</a>
-                <div class="meta">
-                  <span class="date">{{crew.meta}}</span>
-                </div>
-                <div *ngFor="let fact of crew.facts;" class="description">
-                  <p>{{fact}}</p>
-                </div>
-              </div>
-              <div class="extra content">
-                <a>
-                  <i class="user icon"></i>
-                  {{crew.role}}
-                </a>
-              </div>
+    
+  </div>
+  <h2 class="ui horizontal divider header">
+    <i class="child icon"></i>
+    Ushers
+  </h2>
+  <div class="ui center aligned vertically divided stackable grid">
+  <div class="two column row">
+    <div class="column">
+      <div *ngFor="let crew of ushers1; let i = index;" class="ui centered cards">
+        <div class="ui card">
+          <div class="image">
+            <img src={{crew.image}}>
+          </div>
+          <div class="content">
+            <a class="header">{{crew.name}}</a>
+            <div class="meta">
+              <span class="date">{{crew.meta}}</span>
             </div>
+            <div *ngFor="let fact of crew.facts;" class="description">
+              <p>{{fact}}</p>
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="user icon"></i>
+              {{crew.role}}
+            </a>
           </div>
         </div>
       </div>
+    </div>
+    <div class="column">
+      <div *ngFor="let crew of ushers2; let i = index;" class="ui centered cards">
+        <div class="ui card">
+          <div class="image">
+            <img src={{crew.image}}>
+          </div>
+          <div class="content">
+            <a class="header">{{crew.name}}</a>
+            <div class="meta">
+              <span class="date">{{crew.meta}}</span>
+            </div>
+            <div *ngFor="let fact of crew.facts;" class="description">
+              <p>{{fact}}</p>
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="user icon"></i>
+              {{crew.role}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 </div>
