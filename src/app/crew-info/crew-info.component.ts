@@ -26,7 +26,7 @@ export class CrewInfoComponent implements OnInit {
     this.bridesmaids.push(new Crew('Karen Miles', 'Bridesmaid', 'assets/karen.jpg', 'Sister-in-Law', ['UIUC/North Carolina State Grad.', 'Middle School Teacher.', 'Best Chef in Wake County.']));
     this.bridesmaids.push(new Crew('Helen Grove', 'Bridesmaid', 'assets/helen.JPG', 'Sister-in-Law', ['The Johns Hopkins University Grad.', 'Corporate Communications Director.', 'Blackjack Enthusiast.']));
     this.ushers1.push(new Crew('Pat LeBuhn', 'Usher', 'assets/PatrickEmily.JPG', 'Brother', ['Indiana University Grad.', 'IT Release Manager.', 'Man of Few Words.']));
-    this.ushers2.push(new Crew('Peter LeBuhn', 'Usher', 'assets/PeterUsher.jpg', 'Brother', ['Second City Student.', 'Jimmy Johns Manager.', 'Zany.']));
+    this.ushers2.push(new Crew('Peter LeBuhn', 'Usher', 'assets/PeterUsher.jpg', 'Brother', ['Second City Student.', 'Jimmy Johns Manager.', 'Improv Comedian.']));
   }
 
 }
