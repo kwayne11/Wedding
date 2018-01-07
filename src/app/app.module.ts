@@ -12,6 +12,7 @@ import { RsvpInfoComponent } from './rsvp-info/rsvp-info.component';
 import { RegistryInfoComponent } from './registry-info/registry-info.component';
 import { CrewInfoComponent } from './crew-info/crew-info.component';
 import { InfoComponentComponent } from './info-component/info-component.component';
+import { WeddingInfoComponent } from './wedding-info/wedding-info.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { InfoComponentComponent } from './info-component/info-component.componen
     RsvpInfoComponent,
     RegistryInfoComponent,
     CrewInfoComponent,
-    InfoComponentComponent
+    InfoComponentComponent,
+    WeddingInfoComponent
   ],
   imports: [
     BrowserModule,
