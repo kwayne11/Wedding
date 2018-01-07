@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SuiTabsModule, IMessage } from 'ng2-semantic-ui';
 
 @Component({
   selector: 'app-root',
